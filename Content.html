@@ -9,62 +9,67 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="partial/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="partial/owl.carousel.css">
+  <link rel="stylesheet" href="partial/owl.theme.default.min.css">
+  <link rel="stylesheet" href="partial/style.css">
   <!-- <link rel="stylesheet" href="partial/style.css"> -->
   <title>DSCMBM</title>
 
   <style>
-    *{
-font-family: 'josefin sans', sans-serif;
-}
+    * {
+      font-family: 'josefin sans', sans-serif;
+    }
 
 
 
-.card-wrapper{
-height: 400px;
-width: 300px;
-perspective: 1000px;
-border-radius: 20px;
-}
+    .card-wrapper {
+      height: 400px;
+      width: 300px;
+      perspective: 1000px;
+      border-radius: 20px;
+    }
 
-.content{
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
-}
+    .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
 
-.card-wrapper:hover .content{
-transform: rotateY(180deg);
-transition: 1s;
-}
+    .card-wrapper:hover .content {
+      transform: rotateY(180deg);
+      transition: 1s;
+    }
 
-.face-front, .face-back{
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: #fff;
-color: black;
-}
+    .face-front,
+    .face-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      color: black;
+    }
 
-.face-back{
-transform: rotateY(180deg);
-}
-.activepart{
-    font-weight: bold;
-    /* border: 2px solid rgb(49, 47, 47); */
-    border-radius: 20px;
-    
-}
-.activepart:hover{
-    color: white;
-    background-color: turquoise;
-}
-</style>
+    .face-back {
+      transform: rotateY(180deg);
+    }
+
+    .activepart {
+      font-weight: bold;
+      /* border: 2px solid rgb(49, 47, 47); */
+      border-radius: 20px;
+
+    }
+
+    .activepart:hover {
+      color: aqua;
+      /* background-color: turquoise; */
+    }
+  </style>
 
 </head>
 
@@ -86,10 +91,10 @@ transform: rotateY(180deg);
         <li class="nav-item mr-2 ">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item mr-2">
+        <li class="nav-item mr-2 active">
           <a class="nav-link" href="events.html">Event</a>
         </li>
-        <li class="nav-item mr-2 active">
+        <li class="nav-item mr-2">
           <a class="nav-link" href="Content.html">Content</a>
         </li>
         <li class="nav-item mr-2 ">
@@ -114,11 +119,11 @@ transform: rotateY(180deg);
     <div class="carousel-inner carousel-fade ">
       <div class="carousel-item active video">
         <video class="video-fluid videoWidth" autoplay loop muted>
-            <source src="anim7.mp4" type="video/mp4">
-          </video>
+          <source src="anim4.mp4" type="video/mp4">
+        </video>
         <div class="carousel-caption d-block d-md-block ">
           <h2 class="CarouselHeading">Developers Student Club</h2>
-          <h4 class="CarouselSub">Content / DSCMBM</h4>
+          <h4 class="CarouselSub">Team / DSCMBM</h4>
 
         </div>
       </div>
@@ -154,94 +159,122 @@ transform: rotateY(180deg);
     </a>
   </div>
 
-  <div class="container text-center text-weight-bold my-5">
-      <h1>Content</h1>
-      <div class="w-50 mx-auto">
-        <hr>
+
+  <div class="container my-3">
+    <h1 class="text-center font-weight-bold">Why DSC?</h1>
+    <div class="w-50 mx-auto">
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qq7uzijIiqc" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
+    </div>
+  </div>
+
+
+
+  <div class="container text-center text-weight-bold my-5">
+    <h1>Content</h1>
+    <div class="w-50 mx-auto">
+      <hr>
+    </div>
+
+  </div>
+  <div class="container ">
+    <div class="row owl-carousel owl-theme" style="overflow-x: hidden">
+      <div class=" font-div ui activepart item  my-2 mx-auto text-center" data-toggle="collapse" data-target="#UI">
+        <h5>UI | UX</h5>
+      </div>
+      <div class=" font-div web activepart item  my-2 mx-auto text-center" data-toggle="collapse" data-target="#Web">
+        <h5>Web Development</h5>
+      </div>
+      <div class=" font-div android activepart item my-2 mx-auto text-center" data-toggle="collapse" data-target="#Android">
+        <h5>Android Development</h5>
+      </div>
+      <div class="font-div machinelearning item activepart my-2 mx-auto text-center" data-toggle="collapse" data-target="#ML">
+        <h5>Machine Learning</h5>
+      </div>
+      <div class=" font-div cloud activepart item my-2 mx-auto text-center" data-toggle="collapse" data-target="#Cloud">
+        <h5>Cloud Computing</h5>
+      </div>
+      <div class=" font-div AI activepart my-2 item mx-auto text-center" data-toggle="collapse" data-target="#AI">
+        <h5>Artifical intelligence</h5>
+      </div>
+      <div class="font-div iot activepart item my-2 mx-auto text-center" data-toggle="collapse" data-target="#IOT">
+        <h5>IOT</h5>
+      </div>
+      <div class="font-div cp activepart my-2 item  mx-auto text-center" data-toggle="collapse" data-target="#CP">
+        <h5> Competative programming</h5>
+      </div>
+      <div class=" font-div gd activepart my-2 item  mx-auto text-center" data-toggle="collapse" data-target="#GD">
+        <h5> Graphic designing</h5>
+      </div>
+
+    </div>
 
   </div>
 
-<div class="container">
-    <div class="row" style="overflow-x: hidden">
-        <div class="col-4 col-md-3 font-div ui activepart  my-2 mx-auto"  data-toggle="collapse" data-target="#UI">
-          <h5>UI | UX</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div web activepart  my-2 mx-auto"  data-toggle="collapse" data-target="#Web">
-          <h5>Web Development</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div android activepart my-2 mx-auto"  data-toggle="collapse" data-target="#Android">
-          <h5>Android Development</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div machinelearning activepart my-2 mx-auto"  data-toggle="collapse" data-target="#ML">
-         <h5>Machine Learning</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div cloud activepart my-2 mx-auto"  data-toggle="collapse" data-target="#Cloud">
-          <h5>Cloud Computing</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div AI activepart my-2  mx-auto"  data-toggle="collapse" data-target="#AI">
-          <h5>Artifical intelligence</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div iot activepart  my-2 mx-auto"  data-toggle="collapse" data-target="#IOT">
-        <h5>IOT</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div cp activepart my-2  mx-auto"  data-toggle="collapse" data-target="#CP">
-        <h5> Competative programming</h5>
-        </div>
-        <div class="col-4 col-md-3 font-div gd activepart my-2  mx-auto"  data-toggle="collapse" data-target="#GD">
-       <h5> Graphic designing</h5>
-        </div>
-        
-    </div>
 
-</div>
-
-
-<div class="container">
+  <div class="container">
     <div class="collapse " id="UI">
-    <h1>This is ui section</h1>
+      <h1>This is ui section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse " id="Web">
-    <h1>This is web section</h1>
+      <div class="row">
+        <div class="col-10 m-auto">
+          <img src="img/webf.png" alt="placeholder 960" class="img-responsive" style="width: 100%;" />
+
+        </div>
+      </div>
+      <div class="col-10">
+        <h1 class="text-center">Steps Of Learning</h1>
+
+      </div>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse " id="Android">
-    <h1>This is android section</h1>
+      <h1>This is android section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="ML">
-    <h1>This is ML section</h1>
+      <h1>This is ML section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="Cloud">
-    <h1>This is cloud section</h1>
+      <h1>This is cloud section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="AI">
-    <h1>This is AI section</h1>
+      <h1>This is AI section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="IOT">
-    <h1>This is IOT section</h1>
+      <h1>This is IOT section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="CP">
-    <h1>This is Competative world section</h1>
+      <h1>This is Competative world section</h1>
     </div>
-</div>
-<div class="container">
+  </div>
+  <div class="container">
     <div class="collapse" id="GD">
-    <h1>This is Graphic designing section</h1>
+      <h1>This is Graphic designing section</h1>
     </div>
-</div>
+  </div>
 
 
 
@@ -250,8 +283,8 @@ transform: rotateY(180deg);
 
 
 
-<!--  Footer -->
-<div class="container-fluid bg-info  text-white mt-5" style="border-radius: 64px 64px 0 0;">
+  <!--  Footer -->
+  <div class="container-fluid bg-info  text-white mt-5" style="border-radius: 64px 64px 0 0;">
     <footer class="page-footer font-small teal p-4 mt-5">
       <h2 class="text-center my-3">Lets Connect!!</h2>
       <div class="container-fluid text-center text-md-left">
@@ -321,14 +354,14 @@ transform: rotateY(180deg);
                 </a>
               </div>
               <div class="col-3 col-md-2">
-              <a href="#"><i class="fa icon fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa icon fa-youtube-play" aria-hidden="true"></i></a>
               </div>
               <div class="col-3 col-md-2">
-              <a href="#"><i class="fa icon fa-linkedin" aria-hidden="true"></i>
-              </a>
+                <a href="#"><i class="fa icon fa-linkedin" aria-hidden="true"></i>
+                </a>
               </div>
               <div class="col-3 col-md-2">
-              <a href="#"><i class="fa icon fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa icon fa-facebook-official" aria-hidden="true"></i></a>
               </div>
             </div>
             <!-- Content -->
@@ -366,21 +399,51 @@ transform: rotateY(180deg);
   </script> -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-   
-
-<script>
-   
-
-        $('.font-div').click(function(){
-
-            $('.collapse').collapse('hide');
-        });
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.0.0.min.js"
+    integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw=" crossorigin="anonymous"></script>
+  <script src="partial/owl.carousel.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+ 
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+      dots: true,
+      autoplay: false,
+      autoplayTimeout: 1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+        
+          1000: {
+            items: 4
+          }
+        }
+      });
     </script>
-    
-  
+  <script>
+
+
+    $('.font-div').click(function () {
+
+      $('.collapse').collapse('hide');
+    });
+  </script>
+
+
 </body>
 
 </html>
