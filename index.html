@@ -26,9 +26,9 @@
   <title>DSCMBM</title>
 </head>
 
-<body>
+<body onload="myFunction()">
 
-
+  <div id="loading"></div>
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg  navbar-light navborder">
@@ -74,32 +74,22 @@
     </ol>
     <div class="carousel-inner carousel-fade ">
       <div class="carousel-item active video">
-        <video class="video-fluid videoWidth" autoplay loop muted>
-          <source src="anim7.mp4" type="video/mp4">
-        </video>
-        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
-          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Club</h2>
-          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
+        <img class="d-block w-100" src="img/project.jpg" alt="First slide">
+        <div class="carousel-caption text-dark d-block d-md-block ">
+         
+        </div>
+      </div>
+      <div class="carousel-item video">
+        <img class="d-block w-100" src="img/Home2.jpg" alt="First slide">
+        <div class="carousel-caption text-dark d-block d-md-block ">
+         
 
         </div>
       </div>
       <div class="carousel-item video">
-        <video class="video-fluid videoWidth" autoplay loop muted>
-          <source src="anim5.mp4" type="video/mp4">
-        </video>
-        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
-          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Clubs</h2>
-          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
-
-        </div>
-      </div>
-      <div class="carousel-item video">
-        <video class="video-fluid videoWidth" autoplay loop muted>
-          <source src="anim5.mp4" type="video/mp4">
-        </video>
-        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
-          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Clubs</h2>
-          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
+        <img class="d-block w-100" src="img/Home3.jpg" alt="First slide">
+        <div class="carousel-caption d-block d-md-block ">
+        
 
 
         </div>
@@ -623,6 +613,12 @@
       duration: 1000,
     });
   </script>
+    <script>
+      var preloader=document.getElementById('loading');
+  function myFunction(){
+     preloader.style.display = 'none';
+  }
+</script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

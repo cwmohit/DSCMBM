@@ -4,6 +4,12 @@
     font-family: sans-serif;
     
 }
+#loading{
+  width: 100%;
+  height: 100vh;
+  background: #fff url('../img/Spinner-1s-200px.gif') no-repeat center;
+  z-index: 99999;
+}
 
 .headerimage{
     height: -webkit-fill-available!important;
