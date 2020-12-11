@@ -1,0 +1,24 @@
+1. Setting up Development Environment
+- Anaconda (Jupyter Notebooks)
+- Installing Essential Libraries
+2. Warming Up
+- Why Python?
+- Python Basics (Loops, Data Structures, Files, etc.)
+3. A Touch of Mathematics
+- Statistics, Probablity, Calculus
+4. Scientific and Data Visulaization Libraries in Python
+- NumPy, Pandas, Matplotlib
+5. Traditional Machine Learning Algorithms
+- Python's Scikit-Learn
+6. Competitive Data Science & ML
+- Kaggle
+7. Deep Learning
+- A Little Bit more Mathematic
+- Neural Networks
+- Working with Unstructured Datasets
+8. Advanced Deep Learning Frameworks
+- TensorFlow, Keras, PyTorch
+9. Model Deployment on Web and App
+- TensorFlow.js, TensorFlowLite
+10. ML over Cloud
+- Google Colab
