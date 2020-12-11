@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="partial/owl.carousel.css">
+  <link rel="stylesheet" href="partial/owl.theme.default.min.css">
+  <!-- <link rel="stylesheet" href="partial/style.css"> -->
+  <style>
+    .wrapper {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .container:hover .course
+    {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    .container .course:hover{
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    .course{
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+      display: flex;
+      max-width: 100%;
+      /* overflow: hidden; */
+      width: 85%;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .preview {
+      width: 300px;
+      padding: 40px;
+      position: relative;
+    }
+    .info {
+      padding: 30px;
+      position: relative;
+      width: 100%;
+    }
+    .info h6{
+      opacity: .6;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .info h2{
+      letter-spacing: 1px;
+      margin: 10px 0;
+    }
+
+    .info p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .btn {
+      background: #e40046;
+      border: 1px solid transparent;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      bottom: 30px;
+      /* right: 30px; */
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+      font-weight: bold;
+      border-radius: 20px;
+      margin-top: auto;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #e40046;
+      border: 1px solid #e40046;
+      transform: scale(1.05);
+    }
+    @media(max-width: 768px){
+      .course {
+        flex-direction: column;
+        width: 100%;
+      }
+      .preview{
+        width: 100%;
+        padding: 40px;
+      }
+
+      .info h2 {
+        margin-top: 1px;
+      }
+      .info p {
+        margin-bottom: 50px;
+      }
+      .btn {
+        padding: 10px 15px;
+        /* float:right; */
+        font-size: 14px;
+      }
+    }
+
+
+  </style>
+  <title>DSCMBM</title>
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg  navbar-light navborder">
+    <div class="ml-lg-5 ml-md-3 ml-2">
+      <a class="navbar-brand" href="index.html"><span><img src="img/dsc.png" width="64px" height="32px" class=""
+            ></span>
+      </a>
+    </div>
+    <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto navbar-right font-weight-bold">
+        <li class="nav-item mr-2 active ">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="events.html">Event</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="Content.html">Content</a>
+        </li>
+        <li class="nav-item mr-2 ">
+          <a class="nav-link " href="#">Project</a>
+        </li>
+        <li class="nav-item mr-2 ">
+          <a class="nav-link " href="Team.html">Team</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <div id="my_carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner carousel-fade ">
+      <div class="carousel-item active video">
+        <video class="video-fluid videoWidth" autoplay loop muted>
+          <source src="anim7.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
+          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Club</h2>
+          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
+
+        </div>
+      </div>
+      <div class="carousel-item video">
+        <video class="video-fluid videoWidth" autoplay loop muted>
+          <source src="anim5.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
+          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Clubs</h2>
+          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
+
+        </div>
+      </div>
+      <div class="carousel-item video">
+        <video class="video-fluid videoWidth" autoplay loop muted>
+          <source src="anim5.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption d-block d-md-block " style="overflow-x: hidden">
+          <h2 class="CarouselHeading" data-aos="fade-right">Developers Student Clubs</h2>
+          <h4 class="CarouselSub" data-aos="fade-left">M.B.M. Engineering College, JNVU</h4>
+
+
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="course">
+      <div class="preview">
+        <img src="project_page.png" alt="">
+      </div>
+      <div class="info">
+        <h6>Project 1</h6>
+        <h2>Web Development, JAVASCRIPT</h2>
+        <p class="p-trunc">
+        Lorem ipsum is a pseudo-Latin text used in web design,
+        typography, layout, and printing in place of English to
+        emphasise design elements over content. It's also called placeholder (or filler) text
+        Lorem ipsum is a pseudo-Latin text used in web design,
+        typography, layout, and printing in place of English to
+        emphasise design elements over content. It's also called placeholder (or filler) text</p>
+          <button class="btn" name="button">Contribute</button>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="course">
+    <div class="preview">
+      <img src="project_page.png" alt="">
+    </div>
+    <div class="info">
+      <h6>Project 1</h6>
+      <h2>Web Development, JAVASCRIPT</h2>
+      <p class="p-trunc">
+      Lorem ipsum is a pseudo-Latin text used in web design,
+      typography, layout, and printing in place of English to
+      emphasise design elements over content. It's also called placeholder (or filler) text
+      Lorem ipsum is a pseudo-Latin text used in web design,
+      typography, layout, and printing in place of English to
+      emphasise design elements over content. It's also called placeholder (or filler) text</p>
+        <button class="btn" name="button">Contribute</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="course">
+    <div class="preview">
+      <img src="project_page.png" alt="">
+    </div>
+    <div class="info">
+      <h6>Project 1</h6>
+      <h2>Web Development, JAVASCRIPT</h2>
+      <p class="p-trunc">
+      Lorem ipsum is a pseudo-Latin text used in web design,
+      typography, layout, and printing in place of English to
+      emphasise design elements over content. It's also called placeholder (or filler) text
+      Lorem ipsum is a pseudo-Latin text used in web design,
+      typography, layout, and printing in place of English to
+      emphasise design elements over content. It's also called placeholder (or filler) text</p>
+        <button class="btn" name="button">Contribute</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- <script>
+    const trunc = document.querySelector('.p-trunc');
+    trunc.innerText = trunc.innerText.substring(0,300);
+  </script> -->
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.0.0.min.js"
+    integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw=" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
